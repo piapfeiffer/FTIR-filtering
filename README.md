@@ -3,5 +3,3 @@ Typically, FTIR (Fourier-transform infrared) absorption bands that are suitable 
 
 More details are available in our manuscript: 
 Pfeiffer, P., Ronai, B., Vorlaufer, G., Dörr, N. & Filzmoser, P. (2022). Weighted LASSO variable selection for the analysis of FTIR spectra applied to the prediction of engine oil degradation.[Preprint submitted to Elsevier].
-
-Reference: LaTex reference
