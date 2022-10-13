@@ -1,5 +1,6 @@
 # Pre-Processing for FTIR spectra
 # filtering of non-informative variables
+library(ggplot2)
 
 PCAfilter <- function(X, threshold = 0.95){
   # performs PCA on matrix X and reconstructs from components needed to explain 
