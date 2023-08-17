@@ -2,6 +2,11 @@
 # filtering of non-informative variables
 library(ggplot2)
 
+var_explained <- function(prcomp_obj) {
+  a <- prcomp_obj$sdev^2
+  a / sum(a)
+}
+
 PCAfilter <- function(X, threshold = 0.95){
   # performs PCA on matrix X and reconstructs from components needed to explain 
   # the variance given by the threshold
