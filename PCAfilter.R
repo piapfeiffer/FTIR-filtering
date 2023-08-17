@@ -21,7 +21,7 @@ PCAfilter <- function(X, threshold = 0.95){
   # reconstruction
   k <- min(which(cumsum(var_explained(res.PCA))>threshold))
   Xhat <- res.PCA$x[, 1:k]%*%t(res.PCA$rotation[, 1:k])
-  Xhat <- as.matrix(t((t( Xhat) * scale)) + rep(center, each = nrow(v)))
+  Xhat <- as.matrix(t((t( Xhat) * scale)) + rep(center, each = nrow(Xhat)))
 
   # computation of reconstruction error
   RE <- matrix(data = NA, nrow= nrow(X), ncol = ncol(X))
