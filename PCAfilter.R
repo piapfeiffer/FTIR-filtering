@@ -16,7 +16,7 @@ PCAfilter <- function(X, threshold = 0.95){
   center <- attr(X_scaled, "scaled:center")
   scale <- attr(X_scaled, "scaled:scale")
   
-  const_cols <- apply(data_IR %>% select(starts_with("x")),2,mad)>0
+  const_cols <- apply(X_scaled %>% select(starts_with("x")),2,mad)>0
   X_scaled <- X_scaled[, const_cols]
   center <- center[const_cols]
   scale <- scale[const_cols]
