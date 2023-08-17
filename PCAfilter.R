@@ -1,7 +1,7 @@
 # Pre-Processing for FTIR spectra
 # filtering of non-informative variables
 library(ggplot2)
-library(dplyr)
+library(tidyverse)
 
 var_explained <- function(prcomp_obj) {
   a <- prcomp_obj$sdev^2
